@@ -1,0 +1,14 @@
+{
+  "name": "clase25abril",
+  "version": "1.0.0",
+  "description": "practica mercado liebre",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "diego",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.0"
+  }
+}
