@@ -1,11 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+
 body{
-    background-color: rgb(151, 148, 148);
+    height: 100%;
+    background-color:  #EAC926;
+    font-family: 'Roboto', sans-serif;
+    
 }
 
 header{
-    background-color: rgb(255, 196, 0);
+    background-color: #EAC926;
 }
 
-p.negrita {
-    font-weight: 600;
+main {}
+
+h2 {
+    font-size: 24px;
+}
+
+
+h5 {
+    font-size: 16px;
+}
+h6{
+    font-size: 18px;
+}
+
+footer{
+    background-color: rgb(255,255,255);
 }
