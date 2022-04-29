@@ -11,7 +11,28 @@ header{
     background-color: #EAC926;
 }
 
-main {}
+div.burguer-menu {
+    text-align: center;
+    color: white;
+      
+}
+i.background-burguer{
+    width: 1rem;
+    padding: 0.5rem;    
+    border-radius: 0.25rem;
+    background-color: #03264C;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+       }
+
+
+main {
+    background-color: #EAC926;
+}
 
 h2 {
     font-size: 24px;
@@ -27,4 +48,9 @@ h6{
 
 footer{
     background-color: rgb(255,255,255);
+}
+a{
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
 }
