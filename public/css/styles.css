@@ -1,17 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
 
-body{
-    height: 100%;
-    background-color:  #EAC926;
+body{  
+    background-color:  #ebebeb;;
     font-family: 'Roboto', sans-serif;
-    
 }
 
 header{
+   padding-bottom: 1%;
     background-color: #EAC926;
+    box-sizing: border-box;
+}
+
+div.barraBusqueda{
+    margin-left: 3%;
+}
+
+img.logo{
+    margin-left: 3%;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    text-align: left;
+    width: 40%;
+}
+
+i.botón{
+    margin-bottom: 5%;
+    }
+
+h4,i{
+
+    text-align: center;
 }
 
 div.burguer-menu {
+    margin: 5%;
     text-align: center;
     color: white;
       
@@ -21,36 +43,83 @@ i.background-burguer{
     padding: 0.5rem;    
     border-radius: 0.25rem;
     background-color: #03264C;
+    
+}
+div.banner{
+    margin:auto
+}
+nav{
+    margin-left: 0%;
 }
 
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-       }
+ }
 
 
 main {
-    background-color: #EAC926;
+    
+    width: 90%;
+    background-color: #ebebeb;
+    box-sizing: border-box;
+    margin: auto;
 }
 
 h2 {
     font-size: 24px;
 }
 
-
 h5 {
     font-size: 16px;
 }
+
 h6{
     font-size: 18px;
 }
 
-footer{
-    background-color: rgb(255,255,255);
+
+
+section,article{
+    
+    background-color: white;
 }
 a{
     color: black;
     text-decoration: none;
     font-weight: 500;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+
+footer{
+    padding: 3%;
+    margin: 2%;
+    background-color: white;
+    text-align: center;
+    box-sizing: border-box;
+}
+footer,article{
+    margin-top: 10%;
+    margin-bottom: 2%;
+}
+
+
+p.textito{
+        color:#666 ;
+}
+
+div.icon {
+    color: #03264C;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+@media (min-width:361px){
+
+}
+
+@media (min-width:768px) {
+    
 }
