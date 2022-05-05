@@ -1,125 +1,246 @@
 @import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
 
-body{  
-    background-color:  #ebebeb;;
-    font-family: 'Roboto', sans-serif;
-}
-
-header{
-   padding-bottom: 1%;
-    background-color: #EAC926;
+*{
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
-}
-
-div.barraBusqueda{
-    margin-left: 3%;
-}
-
-img.logo{
-    margin-left: 3%;
-    margin-top: 4%;
-    margin-bottom: 2%;
-    text-align: left;
-    width: 40%;
-}
-
-i.botón{
-    margin-bottom: 5%;
     }
 
-h4,i{
-
-    text-align: center;
-}
-
-div.burguer-menu {
-    margin: 5%;
-    text-align: center;
-    color: white;
-      
-}
-i.background-burguer{
-    width: 1rem;
-    padding: 0.5rem;    
-    border-radius: 0.25rem;
-    background-color: #03264C;
-    
-}
-div.banner{
-    margin:auto
-}
-nav{
-    margin-left: 0%;
-}
-
-ul {
-    list-style-type: none;
- }
-
-
-main {
-    
-    width: 90%;
-    background-color: #ebebeb;
+/*BODY */
+body{  
     box-sizing: border-box;
-    margin: auto;
+    background-color:  #ebebeb;;
+    font-family: 'Roboto';
+    
 }
-
-h2 {
-    font-size: 24px;
-}
-
-h5 {
-    font-size: 16px;
-}
-
+/* THE "H" */
 h6{
     font-size: 18px;
 }
-
-
-
-section,article{
-    
-    background-color: white;
+h5{
+    font-size: 16px;
 }
-a{
-    color: black;
+h4{
+    font-size: 24px;
+}
+h2{
+    font-size: 26px;
+}
+
+
+/*<header>*/
+header{
+    background-color: #EAC926;
+    padding: 20px;
+    
+}
+/* barra superior */ 
+.barra-header-top{
+    display: block;
+    padding: 8px;
+    text-align: center;
+}
+
+.texto-header {
+    font-weight: 400;
+    text-align: center;
+}
+
+.logo {
+    width: 200px;
+    text-align: left;
+}
+/*menu hamburguesa*/
+.botonburguesa {
+    background-color:#03264C;
+    color:white;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+
+/*barra inferior*/
+.barra-header-bottom{
+    display: none;
+    
+}
+.barra-header-bottom ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.barra-header-bottom a {
     text-decoration: none;
-    font-weight: 500;
+    display: inline-block;
+    padding: 5px 0px;
+    font-size: 17px;
+    color: rgb(73, 71, 71);
+}
+/*</header>*/
+
+/*<main>*/
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    }
+
+main {
+    width: auto;
+    margin:auto;
+}
+img.banner {
+    margin: 0;
+    width: 100%;
+}
+section {
+    width: 90%;
+    margin: auto;
+}
+/*ARTICULOS*/
+main article {
+    margin-bottom: 10px;
+    background-color: white;
+    border-top: solid 1px #ebebeb;
+    width: 100%;
 }
 img{
     width: 100%;
-    height: auto;
 }
 
+.descripcion{
+    display: none;
+}
+ 
+.contenedorpadre{
+    display: flex;
+    flex-wrap: wrap;        
+}
+.precio{
+    flex-grow: 0.30;
+}
+.descuento{
+    flex-grow: 0.70;
+}
+.pr2{
+    display: none;
+ }
+ .pr3{
+    display: none;
+ }
+ .pr4{
+    display: none;
+ }
+
+/*</main>*/
+
+/*<footer>*/
 footer{
-    padding: 3%;
-    margin: 2%;
-    background-color: white;
     text-align: center;
-    box-sizing: border-box;
 }
-footer,article{
-    margin-top: 10%;
-    margin-bottom: 2%;
-}
+/*</footer>*/
 
 
-p.textito{
-        color:#666 ;
-}
 
-div.icon {
-    color: #03264C;
-    font-size: 2em;
-    margin-bottom: 10px;
-}
 
-@media (min-width:361px){
 
-}
-
-@media (min-width:768px) {
+@media (min-width: 360px) {
+    .barra-header-top{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
     
+        
+    .texto-header{
+        max-width: 350px;
+    }
+  
+        /*Articulos*/
+    .display {
+        display: flex;
+    }
+    article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+     }
+     .pr1{
+         flex-grow: 0.5;
+     }
+     .pr2{
+         display: block;
+        flex-grow: 0.5;
+     }
+     
+     
+    .descripcion {
+        display: block;
+    }
+    
+    
+}
+@media(min-width: 768px) {
+    .botonburguesa{
+        display: none;
+    }
+    .barra-header-bottom{
+        display: flex;
+        justify-content: space-between;
+    }
+    .barra-header-bottom ul{
+        display: flex;
+    }
+    .barra-header-bottom li{
+        margin: 0 5px;
+
+    }
+   
+    .barra-header-bottom, .barra-header-top{
+         max-width: 1200px;
+         margin: auto;
+    }
+    .barra-header-top{
+        align-items: center;
+    }
+    .barra-header-bottom li{
+        margin: 0 10px;
+    }
+    .barra-header-bottom a{
+        font-size: 19px;
+    }
+    .texto-header{
+        max-width: none;
+        margin: 0;
+    }
+    .logo{
+        width:300px;
+    }
+
+    /*Articulos*/
+    .pr1{
+        flex-grow: 0.25;
+    }
+    .pr2{
+       flex-grow: 0.25;
+    }
+    .pr3{
+       display: block;
+       flex-grow: 0.25;
+    }
+    .pr4{
+       display: block;
+       flex-grow: 0.25;
+    }
 }
