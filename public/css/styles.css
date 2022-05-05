@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
 
+/*paleta de colores:
+        Amarillo: #EAC926;
+        Azul: #03264C;
+        Celeste: #1259c3;
+        Gris oscuro: #666;
+        Gris claro: #ebebeb;
+        Verde: #39b54a;
+tipografias: 
+        Cuerpos de texto: 12px
+        Titulares (Basado en tu última visita/Ofertas): 24px
+        Precios: 18px
+        Descuentos: 16px
+        Descripciones: 16px
+*/
+
+
 *{
     margin: 0px;
     padding: 0px;
@@ -21,7 +37,7 @@ h5{
     font-size: 16px;
 }
 h4{
-    font-size: 24px;
+    font-size: 20px;
 }
 h2{
     font-size: 26px;
@@ -44,6 +60,7 @@ header{
 .texto-header {
     font-weight: 400;
     text-align: center;
+    font-size: 16;
 }
 
 .logo {
@@ -84,20 +101,6 @@ header{
 
 /*<main>*/
 
-main section article i{
-    display: block;
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-    position: absolute;
-    right: 20px;
-    top: -15px;
-    }
-
 main {
     width: auto;
     margin:auto;
@@ -112,10 +115,10 @@ section {
 }
 /*ARTICULOS*/
 main article {
-    margin-bottom: 10px;
+    margin: 10px;
     background-color: white;
     border-top: solid 1px #ebebeb;
-    width: 100%;
+    width: auto;
 }
 img{
     width: 100%;
@@ -144,12 +147,46 @@ img{
  .pr4{
     display: none;
  }
+ .envios{
+    display: block;
+    width: 100%; 
+    text-align: right;
+ }
+ .camion{
+     color: #39b54a;   
+    font-size: 16px;
+    padding: 5px;       
+    border: 2px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+ }
 
 /*</main>*/
 
 /*<footer>*/
-footer{
+.contenedor-footer{
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px;
     text-align: center;
+    background-color: white;
+}
+.contenedor-footer article {
+    box-shadow: none;
+    margin-top: 15px;
+    
+    
+}
+.icon {
+    color: #03264C;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.textito {
+    margin-top: 40px;
+    margin-bottom: 10px;
+
 }
 /*</footer>*/
 
@@ -157,7 +194,7 @@ footer{
 
 
 
-@media (min-width: 360px) {
+@media (min-width: 361px) {
     .barra-header-top{
         display: flex;
         flex-direction: row;
@@ -191,7 +228,7 @@ footer{
     
     
 }
-@media(min-width: 768px) {
+@media(min-width: 769px) {
     .botonburguesa{
         display: none;
     }
