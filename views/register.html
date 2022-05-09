@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+rel="stylesheet" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+    <div class="barra-header-top">
+        <img src="images/logoml.svg" alt="Mercado Liebre" class="logo">
+        <h4 class="texto-header">
+            <i class="fas fa-hand-holding-usd"></i>Compré en cuotas y sin tarjetas de créditos</h4>
+    </div>
+
+    
+    <a href="" class="botonburguesa">
+        <i class="fas fa-bars background-burguer" ></i>
+    </a>
+    
+
+  <!--  <div class="barraBusqueda">
+        <input type="search" id="site-search" name="q"
+        placeholder="Buscar productos, marcas ">
+        <button><i class="fas fa-search" class="botón"></i></button>
+    </div>  -->
+
+     
+    <nav class="barra-header-bottom">
+        <ul>
+            <li><a href="">Ofertas</a></li>
+            <li><a href="">Tiendas Oficiales</a></li>
+            <li><a href="">Vender</a></li>
+            <li><a href="">Ofertas</a></li>  
+        </ul>
+    
+        <ul>
+            <li><a href="register">Crea tu cuenta <i class="far fa-id-card"></i></a></li>
+            <li><a href="">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+            <li><a href="">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+        </ul>
+    </nav>
+   
+    
+</header>
+
+<main class="main-register">
+
+    <div class="register-box">
+    <div class="register-form">
+
+        <form action="" method="post" class="form-register">
+        
+            <!--name-->
+            <div class="control-form-register">
+            <label for="nombreapellido">Nombre y apellido:</label>
+            <input type="text" name="nombreapellido" placeholder="Ej: Juan Banquito">
+        </div>
+            <!--username-->
+            <div class="control-form-register">
+            <label for="usuario">Nombre de usuario:</label>
+            <input type="text" name="usuario" placeholder="Ej: Banquito90">
+        </div>
+            <!--birthday-->
+            <div class="control-form-register">
+            <label for="">Fecha de nacimiento:</label>
+            <input type="date" >
+        </div>
+            <!--buy and sell-->
+            <div class="control-form-register">
+            <label for="">Te intersa:</label>
+            <label for="vender"> <input type="checkbox" value="vender" name="vender" id=""> Vender</label>
+            
+            <label for="comprar"> <input type="checkbox" value="comprar" name="comprar" id=""> Comprar</label>
+            
+        </div>
+            <!--interest-->
+            <div class="control-form-register">
+            <label for="">Categorías de interés:</label>
+            <label for="electro"> <input type="checkbox" name="electro" value="electro"> Electro</label>
+            
+            <label for="moda"> <input type="checkbox" name="moda" value="moda"> Moda</label>          
+            
+            <label for="hogar"> <input type="checkbox" name="hogar" value="hogar"> Hogar</label>
+            
+            <label for="jugueteria"> <input type="checkbox" name="jugueteria" value="jugueteria"> Juguetería</label>
+            
+            <label for="vidasana"> <input type="checkbox" name="vidasana" value="vidaSana"> Vida sana</label>
+            
+        </div>
+            <!--picture-->
+            <div class="control-form-register">
+            <label for="">Tú foto:</label>
+            <input type="file" accept=".jpg .png">
+        </div>
+            <!--password-->
+            <div class="control-form-register">
+            <label for="password">Contraseña:</label>
+            <input type="password" name="password" placeholder="Escriba aquí su contraseña">
+        </div>
+            <!--confirm password-->
+            <div class="control-form-register">
+            <label for="confirm-password" placeholder="Repita aquí su contraseña">Confirmar contraseña:</label>
+            <input type="password" name="confirm-password">
+        </div>
+            <!--button submit-->
+            <button type="reset">Borrar</button>
+            <!--button reset-->
+            <button type="submit">Guardar</button>
+        
+        </form>
+    </div>
+    </div>
+</main>
+
+
+</body>
+</html>
